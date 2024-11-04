@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-      ensure_installed = { "angularls", "bashls", "clangd", "cssls", "dockerls", "eslint", "gradle_ls", "html", "jsonls", "jdtls", "tsserver", "kotlin_language_server", "lua_ls", "marksman", "pyre", "sqlls", "svelte", "tailwindcss", "vuels", "hydra_lsp"
+      ensure_installed = { "angularls", "bashls", "clangd", "cssls", "dockerls", "eslint", "gradle_ls", "html", "jsonls", "jdtls", "ts_ls", "kotlin_language_server", "lua_ls", "marksman", "pyre", "sqlls", "svelte", "tailwindcss", "vuels", "hydra_lsp"
     }
     })
     end
@@ -29,7 +29,7 @@ return {
       lspconfig.html.setup {}
       lspconfig.jsonls.setup {}
       lspconfig.jdtls.setup {}
-      lspconfig.tsserver.setup {}
+      lspconfig.ts_ls.setup {}
       lspconfig.kotlin_language_server.setup {}
       lspconfig.lua_ls.setup {}
       lspconfig.marksman.setup {}
